@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Track Driver</title>
+</head>
+<body>
+    <h2>Track Your Driver</h2>
+    <ul>
+        {% for order in orders %}
+            <li>Driver Phone Number: {{ order.driver_phone_number }} - From {{ order.pickup_location }} to {{ order.destination }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
